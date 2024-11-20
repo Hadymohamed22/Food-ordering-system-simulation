@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tailwind project 1</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome css file  -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <!-- tailwind css -->
+    <link rel="stylesheet" href="assets/css/output.css" />
+    <!-- main css file -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="bg-primary relative">
+    <div
+      class="container mx-auto py-3 grid grid-cols-1 lg:grid-cols-4 md:grid-cols-4"
+    >
+      <div class="products col-span-3">
+        <h1
+          class="text-secondary font-bold text-5xl text-center lg:text-start md:text-start lg:pt-6 lg:pl-6"
+        >
+          Deserts
+        </h1>
+        <div
+          class="products-content grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 gap-x-5 gap-y-6 px-7 my-6"
+        >
+          <div class="box">
+            <picture>
+              <source
+                srcset="assets/images/image-waffle-desktop.jpg"
+                media="(min-width: 992px)"
+              />
+              <source
+                srcset="assets/images/image-waffle-tablet.jpg"
+                media="(min-width: 768px) and (max-width: 991px)"
+              />
+              <source
+                srcset="assets/images/image-waffle-mobile.jpg"
+                media="(max-width: 767px)"
+              />
+              <img
+                src="assets/images/image-waffle-desktop.jpg"
+                alt="waffle-img"
+                class="rounded-xl"
+              />
+            </picture>
+            <div
+              class="add-to-cart-btn text-secondary bg-primary border border-secondary border-solid rounded-full w-fit py-2 px-3 md:text-sm lg:text-md hover:text-fourColor hover:bg-secondary transition-colors duration-300 mb-4 relative start-[50%] translate-x-[-50%] top-[-21px]"
+            >
+              <div
+                class="flex items-center gap-2 justify-center cursor-pointer"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Add to Cart</span>
+              </div>
+              <div
+                class="product-quantity flex justify-around items-center bg-secondary absolute top-0 left-0 w-full h-full rounded-full transition-all duration-500"
+              >
+                <button
+                  class="minusIcon flex justify-center items-center w-[20px] h-[20px] rounded-full bg-secondary shadow-sm shadow-white text-white hover:text-secondary hover:bg-white transition-colors duration-300"
+                >
+                  -
+                </button>
+                <span class="num text-white">1</span>
+                <button
+                  class="plusIcon flex justify-center items-center w-[20px] h-[20px] rounded-full bg-secondary shadow-sm shadow-white text-white hover:text-secondary hover:bg-white transition-colors duration-300"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+            <div class="box-text text-center lg:text-start md:text-start">
+              <p class="type text-thirdColor text-md lg:text-lg">Waffle</p>
+              <h1
+                class="name text-secondary lg:text-xl text-text-lg font-bold my-1"
+              >
+                Waffle with Berries
+              </h1>
+              <p class="price text-primary text-md lg:text-lg font-bold">
+                $6.35
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <picture>
+              <source
+                srcset="assets/images/image-creme-brulee-desktop.jpg"
+                media="(min-width: 992px)"
+              />
+              <source
+                srcset="assets/images/image-creme-brulee-tablet.jpg"
+                media="(min-width: 768px) and (max-width: 991px)"
+              />
+              <source
+                srcset="assets/images/image-creme-brulee-mobile.jpg"
+                media="(max-width: 767px)"
+              />
+              <img
+                src="assets/images/image-creme-brulee-desktop.jpg"
+                alt="waffle-img"
+                class="rounded-xl"
+              />
+            </picture>
+            <div
+              class="add-to-cart-btn text-secondary bg-primary border border-secondary border-solid rounded-full w-fit py-2 px-3 md:text-sm lg:text-md hover:text-fourColor hover:bg-secondary transition-colors duration-300 mb-4 relative start-[50%] translate-x-[-50%] top-[-21px]"
+            >
+              <div
+                class="flex items-center gap-2 justify-center cursor-pointer"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Add to Cart</span>
+              </div>
+              <div
+                class="product-quantity flex justify-around items-center bg-secondary absolute top-0 left-0 w-full h-full rounded-full transition-all duration-500"
+              >
+                <button
+                  class="minusIcon flex justify-center items-center w-[20px] h-[20px] rounded-full bg-secondary shadow-sm shadow-white text-white hover:text-secondary hover:bg-white transition-colors duration-300"
+                >
+                  -
+                </button>
+                <span class="num text-white">1</span>
+                <button
+                  class="plusIcon flex justify-center items-center w-[20px] h-[20px] rounded-full bg-secondary shadow-sm shadow-white text-white hover:text-secondary hover:bg-white transition-colors duration-300"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+            <div class="box-text text-center lg:text-start md:text-start">
+              <p class="type text-thirdColor text-md lg:text-lg">
+                Creme Brulee
+              </p>
+              <h1
+                class="name text-secondary lg:text-xl text-text-lg font-bold my-1"
+              >
+                Vanilla Bean Creme Brulee
+              </h1>
+              <p class="price text-primary text-md lg:text-lg font-bold">
+                $7.00
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <picture>
+              <source
+                srcset="assets/images/image-macaron-desktop.jpg"
+                media="(min-width: 992px)"
+              />
+              <source
+                srcset="assets/images/image-macaron-tablet.jpg"
+                media="(min-width: 768px) and (max-width: 991px)"
+              />
+              <source
+                srcset="assets/images/image-macaron-mobile.jpg"
+                media="(max-width: 767px)"
+              />
+              <img
+                src="assets/images/image-macaron-desktop.jpg"
+                alt="waffle-img"
+                class="rounded-xl"
+              />
+            </picture>
+            <div
+              class="add-to-cart-btn text-secondary bg-primary border border-secondary border-solid rounded-full w-fit py-2 px-3 md:text-sm lg:text-md hover:text-fourColor hover:bg-secondary transition-colors duration-300 mb-4 relative start-[50%] translate-x-[-50%] top-[-21px]"
+            >
+              <div
+                class="flex items-center gap-2 justify-center cursor-pointer"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Add to Cart</span>
+              </div>
+              <div
+                class="product-quantity flex justify-around items-center bg-secondary absolute top-0 left-0 w-full h-full rounded-full transition-all duration-500"
+              >
+                <button
+                  class="minusIcon flex justify-center items-center w-[20px] h-[20px] rounded-full bg-secondary shadow-sm shadow-white text-white hover:text-secondary hover:bg-white transition-colors duration-300"
+                >
+                  -
+                </button>
+                <span class="num text-white">1</span>
+                <button
+                  class="plusIcon flex justify-center items-center w-[20px] h-[20px] rounded-full bg-secondary shadow-sm shadow-white text-white hover:text-secondary hover:bg-white transition-colors duration-300"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+            <div class="box-text text-center lg:text-start md:text-start">
+              <p class="type text-thirdColor text-md lg:text-lg">Macaron</p>
+              <h1
+                class="name text-secondary lg:text-xl text-text-lg font-bold my-1"
+              >
+                Macaron Mix of Five
+              </h1>
+              <p class="price text-primary text-md lg:text-lg font-bold">
+                $8.00
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <picture>
+              <source
+                srcset="assets/images/image-tiramisu-desktop.jpg"
+                media="(min-width: 992px)"
+              />
+              <source
+                srcset="assets/images/image-tiramisu-tablet.jpg"
+                media="(min-width: 768px) and (max-width: 991px)"
+              />
+              <source
+                srcset="assets/images/image-tiramisu-mobile.jpg"
+                media="(max-width: 767px)"
+              />
+              <img
+                src="assets/images/image-tiramisu-desktop.jpg"
+                alt="waffle-img"
+                class="rounded-xl"
+              />
+            </picture>
+            <div
+              class="add-to-cart-btn text-secondary bg-primary border border-secondary border-solid rounded-full w-fit py-2 px-3 md:text-sm lg:text-md hover:text-fourColor hover:bg-secondary transition-colors duration-300 mb-4 relative start-[50%] translate-x-[-50%] top-[-21px]"
+            >
+              <div
+                class="flex items-center gap-2 justify-center cursor-pointer"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Add to Cart</span>
+              </div>
+              <div
+                class="product-quantity flex justify-around items-center bg-secondary absolute top-0 left-0 w-full h-full rounded-full transition-all duration-500"
+              >
+                <button
+                  class="minusIcon flex justify-center items-center w-[20px] h-[20px] rounded-full bg-secondary shadow-sm shadow-white text-white hover:text-secondary hover:bg-white transition-colors duration-300"
+                >
+                  -
+                </button>
+                <span class="num text-white">1</span>
+                <button
+                  class="plusIcon flex justify-center items-center w-[20px] h-[20px] rounded-full bg-secondary shadow-sm shadow-white text-white hover:text-secondary hover:bg-white transition-colors duration-300"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+            <div class="box-text text-center lg:text-start md:text-start">
+              <p class="type text-thirdColor text-md lg:text-lg">Tiramisu</p>
+              <h1
+                class="name text-secondary lg:text-xl text-text-lg font-bold my-1"
+              >
+                Classic Tiramisu
+              </h1>
+              <p class="price text-primary text-md lg:text-lg font-bold">
+                $5.50
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <picture>
+              <source
+                srcset="assets/images/image-baklava-desktop.jpg"
+                media="(min-width: 992px)"
+              />
+              <source
+                srcset="assets/images/image-baklava-tablet.jpg"
+                media="(min-width: 768px) and (max-width: 991px)"
+              />
+              <source
+                srcset="assets/images/image-baklava-mobile.jpg"
+                media="(max-width: 767px)"
+              />
+              <img
+                src="assets/images/image-baklava-desktop.jpg"
+                alt="waffle-img"
+                class="rounded-xl"
+              />
+            </picture>
+            <div
+              class="add-to-cart-btn text-secondary bg-primary border border-secondary border-solid rounded-full w-fit py-2 px-3 md:text-sm lg:text-md hover:text-fourColor hover:bg-secondary transition-colors duration-300 mb-4 relative start-[50%] translate-x-[-50%] top-[-21px]"
+            >
+              <div
+                class="flex items-center gap-2 justify-center cursor-pointer"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Add to Cart</span>
+              </div>
+              <div
+                class="product-quantity flex justify-around items-center bg-secondary absolute top-0 left-0 w-full h-full rounded-full transition-all duration-500"
+              >
+                <button
+                  class="minusIcon flex justify-center items-center w-[20px] h-[20px] rounded-full bg-secondary shadow-sm shadow-white text-white hover:text-secondary hover:bg-white transition-colors duration-300"
+                >
+                  -
+                </button>
+                <span class="num text-white">1</span>
+                <button
+                  class="plusIcon flex justify-center items-center w-[20px] h-[20px] rounded-full bg-secondary shadow-sm shadow-white text-white hover:text-secondary hover:bg-white transition-colors duration-300"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+            <div class="box-text text-center lg:text-start md:text-start">
+              <p class="type text-thirdColor text-md lg:text-lg">Baklava</p>
+              <h1
+                class="name text-secondary lg:text-xl text-text-lg font-bold my-1"
+              >
+                Pistachio Bakalava
+              </h1>
+              <p class="price text-primary text-md lg:text-lg font-bold">
+                $4.00
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <picture>
+              <source
+                srcset="assets/images/image-meringue-desktop.jpg"
+                media="(min-width: 992px)"
+              />
+              <source
+                srcset="assets/images/image-meringue-tablet.jpg"
+                media="(min-width: 768px) and (max-width: 991px)"
+              />
+              <source
+                srcset="assets/images/image-meringue-mobile.jpg"
+                media="(max-width: 767px)"
+              />
+              <img
+                src="assets/images/image-meringue-desktop.jpg"
+                alt="waffle-img"
+                class="rounded-xl"
+              />
+            </picture>
+            <div
+              class="add-to-cart-btn text-secondary bg-primary border border-secondary border-solid rounded-full w-fit py-2 px-3 md:text-sm lg:text-md hover:text-fourColor hover:bg-secondary transition-colors duration-300 mb-4 relative start-[50%] translate-x-[-50%] top-[-21px]"
+            >
+              <div
+                class="flex items-center gap-2 justify-center cursor-pointer"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Add to Cart</span>
+              </div>
+              <div
+                class="product-quantity flex justify-around items-center bg-secondary absolute top-0 left-0 w-full h-full rounded-full transition-all duration-500"
+              >
+                <button
+                  class="minusIcon flex justify-center items-center w-[20px] h-[20px] rounded-full bg-secondary shadow-sm shadow-white text-white hover:text-secondary hover:bg-white transition-colors duration-300"
+                >
+                  -
+                </button>
+                <span class="num text-white">1</span>
+                <button
+                  class="plusIcon flex justify-center items-center w-[20px] h-[20px] rounded-full bg-secondary shadow-sm shadow-white text-white hover:text-secondary hover:bg-white transition-colors duration-300"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+            <div class="box-text text-center lg:text-start md:text-start">
+              <p class="type text-thirdColor text-md lg:text-lg">Pie</p>
+              <h1
+                class="name text-secondary lg:text-xl text-text-lg font-bold my-1"
+              >
+                Lemon Meringue Pie
+              </h1>
+              <p class="price text-primary text-md lg:text-lg font-bold">
+                $5.00
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <picture>
+              <source
+                srcset="assets/images/image-cake-desktop.jpg"
+                media="(min-width: 992px)"
+              />
+              <source
+                srcset="assets/images/image-cake-tablet.jpg"
+                media="(min-width: 768px) and (max-width: 991px)"
+              />
+              <source
+                srcset="assets/images/image-cake-mobile.jpg"
+                media="(max-width: 767px)"
+              />
+              <img
+                src="assets/images/image-cake-desktop.jpg"
+                alt="waffle-img"
+                class="rounded-xl"
+              />
+            </picture>
+            <div
+              class="add-to-cart-btn text-secondary bg-primary border border-secondary border-solid rounded-full w-fit py-2 px-3 md:text-sm lg:text-md hover:text-fourColor hover:bg-secondary transition-colors duration-300 mb-4 relative start-[50%] translate-x-[-50%] top-[-21px]"
+            >
+              <div
+                class="flex items-center gap-2 justify-center cursor-pointer"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Add to Cart</span>
+              </div>
+              <div
+                class="product-quantity flex justify-around items-center bg-secondary absolute top-0 left-0 w-full h-full rounded-full transition-all duration-500"
+              >
+                <button
+                  class="minusIcon flex justify-center items-center w-[20px] h-[20px] rounded-full bg-secondary shadow-sm shadow-white text-white hover:text-secondary hover:bg-white transition-colors duration-300"
+                >
+                  -
+                </button>
+                <span class="num text-white">1</span>
+                <button
+                  class="plusIcon flex justify-center items-center w-[20px] h-[20px] rounded-full bg-secondary shadow-sm shadow-white text-white hover:text-secondary hover:bg-white transition-colors duration-300"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+            <div class="box-text text-center lg:text-start md:text-start">
+              <p class="type text-thirdColor text-md lg:text-lg">Cake</p>
+              <h1
+                class="name text-secondary lg:text-xl text-text-lg font-bold my-1"
+              >
+                Red Velvet Cake
+              </h1>
+              <p class="price text-primary text-md lg:text-lg font-bold">
+                $4.50
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <picture>
+              <source
+                srcset="assets/images/image-brownie-desktop.jpg"
+                media="(min-width: 992px)"
+              />
+              <source
+                srcset="assets/images/image-brownie-tablet.jpg"
+                media="(min-width: 768px) and (max-width: 991px)"
+              />
+              <source
+                srcset="assets/images/image-brownie-mobile.jpg"
+                media="(max-width: 767px)"
+              />
+              <img
+                src="assets/images/image-brownie-desktop.jpg"
+                alt="waffle-img"
+                class="rounded-xl"
+              />
+            </picture>
+            <div
+              class="add-to-cart-btn text-secondary bg-primary border border-secondary border-solid rounded-full w-fit py-2 px-3 md:text-sm lg:text-md hover:text-fourColor hover:bg-secondary transition-colors duration-300 mb-4 relative start-[50%] translate-x-[-50%] top-[-21px]"
+            >
+              <div
+                class="flex items-center gap-2 justify-center cursor-pointer"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Add to Cart</span>
+              </div>
+              <div
+                class="product-quantity flex justify-around items-center bg-secondary absolute top-0 left-0 w-full h-full rounded-full transition-all duration-500"
+              >
+                <button
+                  class="minusIcon flex justify-center items-center w-[20px] h-[20px] rounded-full bg-secondary shadow-sm shadow-white text-white hover:text-secondary hover:bg-white transition-colors duration-300"
+                >
+                  -
+                </button>
+                <span class="num text-white">1</span>
+                <button
+                  class="plusIcon flex justify-center items-center w-[20px] h-[20px] rounded-full bg-secondary shadow-sm shadow-white text-white hover:text-secondary hover:bg-white transition-colors duration-300"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+            <div class="box-text text-center lg:text-start md:text-start">
+              <p class="type text-thirdColor text-md lg:text-lg">Brownie</p>
+              <h1
+                class="name text-secondary lg:text-xl text-text-lg font-bold my-1"
+              >
+                Salted Caramel Brownie
+              </h1>
+              <p class="price text-primary text-md lg:text-lg font-bold">
+                $5.50
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <picture>
+              <source
+                srcset="assets/images/image-panna-cotta-desktop.jpg"
+                media="(min-width: 992px)"
+              />
+              <source
+                srcset="assets/images/image-panna-cotta-tablet.jpg"
+                media="(min-width: 768px) and (max-width: 991px)"
+              />
+              <source
+                srcset="assets/images/image-panna-cotta-mobile.jpg"
+                media="(max-width: 767px)"
+              />
+              <img
+                src="assets/images/image-panna-cotta-desktop.jpg"
+                alt="waffle-img"
+                class="rounded-xl"
+              />
+            </picture>
+            <div
+              class="add-to-cart-btn text-secondary bg-primary border border-secondary border-solid rounded-full w-fit py-2 px-3 md:text-sm lg:text-md hover:text-fourColor hover:bg-secondary transition-colors duration-300 mb-4 relative start-[50%] translate-x-[-50%] top-[-21px]"
+            >
+              <div
+                class="flex items-center gap-2 justify-center cursor-pointer"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Add to Cart</span>
+              </div>
+              <div
+                class="product-quantity flex justify-around items-center bg-secondary absolute top-0 left-0 w-full h-full rounded-full transition-all duration-500"
+              >
+                <button
+                  class="minusIcon flex justify-center items-center w-[20px] h-[20px] rounded-full bg-secondary shadow-sm shadow-white text-white hover:text-secondary hover:bg-white transition-colors duration-300"
+                >
+                  -
+                </button>
+                <span class="num text-white">1</span>
+                <button
+                  class="plusIcon flex justify-center items-center w-[20px] h-[20px] rounded-full bg-secondary shadow-sm shadow-white text-white hover:text-secondary hover:bg-white transition-colors duration-300"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+            <div class="box-text text-center lg:text-start md:text-start">
+              <p class="type text-thirdColor text-md lg:text-lg">Panna Cotta</p>
+              <h1
+                class="name text-secondary lg:text-xl text-text-lg font-bold my-1"
+              >
+                Vanilla Panna Cotta
+              </h1>
+              <p class="price text-primary text-md lg:text-lg font-bold">
+                $6.50
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="order bg-white shadow-sm h-fit rounded-lg lg:mr-5 p-5">
+        <h1
+          class="text-secondary font-bold text-3xl text-center lg:text-start md:text-start"
+        >
+          Order
+        </h1>
+        <div class="order-content mt-3" id="orderContent">
+          <img
+            src="assets/images/illustration-empty-cart.svg"
+            alt="empty img"
+            width="130"
+            class="my-4 relative start-[50%] translate-x-[-50%]"
+          />
+          <p class="text-sm text-thirdColor text-center">
+            Your added items will appear here
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="confirmed-massage flex fixed h-screen w-screen justify-center items-center bg-black/50 top-0 left-0 z-50"
+    >
+      <div class="massage rounded-lg shadow-md bg-primary px-3 py-5 w-[400px]">
+        <i
+          class="fa-regular fa-circle-check relative left-[50%] translate-x-[-50%] text-4xl text-green-600"
+        ></i>
+        <h1 class="text-center text-xl text-secondary font-bold mt-2">
+          Order Confirmed
+        </h1>
+        <p class="text-center text-gray-500 text-sm">
+          we are hope you enjoy your food
+        </p>
+        <button
+          class="border-none outline-none bg-secondary text-white w-[90%] rounded-full mx-auto py-2 mt-3 startNewOrderBtn block"
+        >
+          Start New Order
+        </button>
+      </div>
+    </div>
+    <!-- font awesome js file  -->
+    <script src="assets/js/all.min.js"></script>
+    <!-- main js file -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

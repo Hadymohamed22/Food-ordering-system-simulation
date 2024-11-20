@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.add-to-cart-btn .product-quantity {
+  transform: scale(0);
+}
+.add-to-cart-btn.active .product-quantity {
+  transform: scale(1);
+}
+.confirmed-massage {
+  visibility: hidden;
+  transform: scale(0);
+  transition: 0.3s;
+}
